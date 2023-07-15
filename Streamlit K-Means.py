@@ -5,9 +5,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import StandardScaler
-import PCA
-import KMeans
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import umap.umap_ as umap
 import plotly.express as px
