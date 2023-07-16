@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-import umap.umap_ as umap
+import umap
 import plotly.express as px
 
 st.sidebar.header("K-Means Clustering App")
