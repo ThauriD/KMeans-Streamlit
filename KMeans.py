@@ -23,7 +23,7 @@ st.header('User Segmentation Platform')
 st.subheader('This program is used to segment users through K-Means Clustering')
 st.write("Read this [website](https://towardsdatascience.com/k-means-clustering-and-principal-component-analysis-in-10-minutes-2c5b69c36b6b) to read about K-Means & PCA")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["1. Upload Data", "EDA", "2. PCA","3. K-Means","4. UMAP Visualisation"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Upload Data", "EDA", "PCA","K-Means","UMAP Visualisation"])
 
 
 
