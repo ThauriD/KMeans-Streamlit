@@ -11,6 +11,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import umap
 import plotly.express as px
+import seaborn as sns
 
 
 st.sidebar.header("K-Means Clustering App")
@@ -84,6 +85,25 @@ with tab2:
         ax.set_ylabel(column2_to_view)
         ax.scatter(df[column1_to_view],df[column2_to_view])
         st.pyplot(fig)
+        
+        
+    col1,col2=st.columns([1,3])
+    with col1:
+        st.subheader("Correlation Heatmap")
+        
+    with col2:
+        corr_df = df.corr()
+        fig4, ax4 = plt.subplots()
+        sns.heatmap(corr_df,ax=ax4)
+        st.pyplot(fig4)
+        
+        
+    col1,col2=st.columns([1,3])
+    with col1:
+        st.subheader("Correlation Matrix")
+        
+    with col2:
+        st.write(corr_df)   
         
 
 
