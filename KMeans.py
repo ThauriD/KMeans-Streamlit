@@ -34,10 +34,11 @@ with tab1:
     data_default = st.selectbox('Would you like to use test data or upload your own csv?', ['Test Data','My Data'])
     
     if data_default == "My Data" :
-        uploaded_file = st.file_uploader('Upload a file (CSV ONLY)', accept_multiple_files=False, type=['csv'] )
-        df=pd.read_csv(uploaded_file)
-        if uploaded_file is None:
-            st.write("Please upload data to proceed")
+        uploaded_file = st.file_uploader('Please upload a file to proceed (CSV ONLY)', accept_multiple_files=False, type=['csv'] )
+        if uploaded_file is not None:
+            df=pd.read_csv(uploaded_file)
+        else:
+            st.error("Please upload data to proceed.")
     
     else:
         st.write("This Test Data shows the Annual Surface Temperature Change for each country (1961 - 2022)")
