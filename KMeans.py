@@ -335,8 +335,3 @@ elif PCA_selected == 'No':
     st.sidebar.text("PCA Components: Not Selected")
 
 st.sidebar.text(f"K-Means Clusters: {st.session_state.clusters}")
-
-
-    st.write(combined_df)
-    
-    
