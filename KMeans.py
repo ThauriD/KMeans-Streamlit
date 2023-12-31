@@ -34,7 +34,7 @@ def load_test(data_default):
               st.write("This Test Data shows the Annual Surface Temperature Change for each country (1961 - 2022)")
               df = pd.read_csv("https://github.com/ThauriD/DemoData/blob/main/Annual_Surface_Temperature_Change.csv?raw=true")
               df.dropna(axis=0,inplace=True)
-              df[~df.index.duplicated(keep='first')]
+              df = df[~df.index.duplicated(keep='first')]
               return df
 
 def standardise_data(df):
