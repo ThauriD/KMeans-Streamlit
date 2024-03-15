@@ -148,7 +148,7 @@ st.write("Read this [website](https://towardsdatascience.com/k-means-clustering-
 st.write('Click through the tabs below to progress')
 
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Upload Data", "🔎 EDA", "PCA","K-Means","UMAP Visualisation"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Upload Data", "🔎 EDA", "⚔️ PCA","👨‍👨‍👦‍👦 K-Means","📊 UMAP Visualisation"])
 
 
 
