@@ -137,6 +137,11 @@ def create_final_df(labels,df):
 
 
 #Main Header
+st.set_page_config(
+        page_icon="🔮",
+        layout="wide",
+        initial_sidebar_state="expanded",
+    )
 st.header('Segmentation Platform')
 st.subheader('This program is used to segment data through K-Means Clustering')
 st.write("Read this [website](https://towardsdatascience.com/k-means-clustering-and-principal-component-analysis-in-10-minutes-2c5b69c36b6b) to learn about K-Means & PCA")
